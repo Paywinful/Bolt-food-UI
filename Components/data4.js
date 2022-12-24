@@ -58,7 +58,7 @@ const data4 = [
     {
         id: '9',
         title: "Munchy's North Legon",
-        price: 'GHc 9.00',
+        price: 'GHc 9.30',
         image: require('./img/munchy.jpeg'),
         time: '13 Jan, 2021 1:22PM Delivered',
     },
