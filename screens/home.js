@@ -6,8 +6,10 @@ import data1 from '../Components/data1';
 import data2 from '../Components/data2';
 import { AntDesign } from '@expo/vector-icons';
 import React from 'react';
+import bolt from '../Components/img/bolt.png'
 
 const Height = Dimensions.get('window').height;
+const Width = Dimensions.get('window').width;
 function Home(){
   return (
     <SafeAreaView style={styles.container}>
@@ -118,6 +120,11 @@ function Home(){
           </TouchableOpacity>
         </View>
         )} />
+
+        <View style={styles.bolt} >
+          <Text style={styles.bolttext}>Tap for available rides!</Text>
+          <Image style={styles.boltimage} source={bolt}/>
+        </View>
         </ScrollView>
     </SafeAreaView>
   )
@@ -209,7 +216,7 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   listdiscounttext:{
-    color: 'red',
+    color: '#FF3F34',
     fontSize: 11,
     fontWeight: 'bold'
   },
@@ -245,7 +252,26 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 12,
   },
-  
+  bolt: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    backgroundColor: '#CDFEEB',
+    width: Width * 0.8,
+    marginLeft: Width * 0.1,
+    marginVertical: Height * 0.03,
+    padding: 10,
+    borderRadius: 10,
+  },
+  boltimage: {
+    width: 80,
+    height: 50,
+  },
+  bolttext: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#258869',
+  },
   
 });
 
