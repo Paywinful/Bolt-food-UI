@@ -43,9 +43,9 @@ const styles = StyleSheet.create({
     // justifyContent: 'space-around',
   },
   input: {
-    width: 280,
+    width: 320,
     height: 50,
-    marginHorizontal: Width * 0.08,
+    marginHorizontal: Width * 0.06,
     borderRadius: 10,
     backgroundColor: '#F5F5F5',
     padding: 10,
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginTop: Height * 0.015,
-    marginLeft: Width * -0.03,
+    marginLeft: Width * -0.018,
   },
   icon1: {
     marginTop: Height * -0.043,

@@ -8,6 +8,7 @@ import { AntDesign } from '@expo/vector-icons';
 import React from 'react';
 import bolt from '../Components/img/bolt.png'
 
+
 const Height = Dimensions.get('window').height;
 const Width = Dimensions.get('window').width;
 function Home(){
@@ -19,6 +20,7 @@ function Home(){
         <View style={styles.location}>
           <Ionicons name="ios-location-outline" size={22} color="black" />
           <Text style={styles.locationname}>Ayawaso</Text>
+          <Text style={styles.locationname1}>BY PW</Text>
         </View>
       </TouchableOpacity>
       <View style={styles.discount}>
@@ -145,7 +147,14 @@ const styles = StyleSheet.create({
   locationname:{
     fontSize: 17,
     marginLeft: 10,
-    marginTop: Height * 0.005,
+    marginTop: Height * 0.003,
+  },
+  locationname1:{
+    fontSize: 17,
+    marginLeft: 10,
+    marginTop: Height * 0.003,
+    fontStyle: 'italic',
+    fontWeight: 'bold',
   },
   discount:{
     marginHorizontal: 21,
